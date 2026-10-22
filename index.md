@@ -66,71 +66,89 @@ Gillingham, Rapson and Wagner, "The Rebound Effect and Energy Efficiency Policy"
 
 **Note 11.**
 
+> So history alone can't tell you which side your own market is on.
+
+Our calculation, pre-registered test T3-A (analysis/PREREGISTRATION.md), code in `analysis/part3/t2_t3/`, results in
+`analysis/results_part3_t2_t3.json`, red-team checks in `analysis/part3/redteam/rt_t3.py` and `rt_t3.json` (summary
+in `analysis/part3/redteam/REDTEAM.md`, T3-A). Data: BEA, National Income and Product Accounts, Table 2.4.5
+"Personal Consumption Expenditures by Type of Product" and Table 2.4.4 "Price Indexes for Personal Consumption
+Expenditures by Type of Product", annual, flat files at https://apps.bea.gov/national/Release/TXT/ (NipaDataA.txt),
+retrieved 2026-10-22. Across 70 categories, 1959-2019, the change in a category's price relative to all consumer
+prices explained almost none of the change in its budget share: correlation -0.015 (95% bootstrap interval -0.27 to
+0.28; permutation p = 0.90). An unchanged share is the case where quantity rises in proportion to the price fall
+(elasticity of substitution about 1), the break-even case in chapter 1's rule. The spread is wide (implied
+elasticity roughly 0.65 to 1.35). Weighted by spending (a check not pre-registered), the slope turns positive, +0.18
+weighted by 1959 spending and +0.25 (interval 0.02 to 0.68) by 2019 spending: cheaper categories tended to lose some
+share. The result is not evidence that demand was typically hungry. Quantities include BEA quality adjustment, and
+share changes mix price and income effects.
+
+**Note 12.**
+
 > The economist James Bessen put it this way: "If demand increases sufficiently in response to productivity-improving technology, then employment will grow; otherwise, it will fall."
 
 J. Bessen, "Automation and Jobs: When Technology Boosts Employment", *Economic Policy* (2019). Quoted from the April 2019 panel version. http://www.economic-policy.org/wp-content/uploads/2019/03/997_Automation-and-Jobs.pdf
 
-**Note 12.**
+**Note 13.**
 
 > Three Stanford economists studying AI and jobs today, Erik Brynjolfsson and his colleagues Chandar and Chen, make the same point in more technical language: higher productivity in a job "could lead to either reduced or increased employment, depending on, among other things, how elastic demand is for the output of those workers."
 
 Brynjolfsson, Chandar and Chen, "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence", Stanford Digital Economy Lab, August 2026 update, footnote 2. https://digitaleconomy.stanford.edu/wp-content/uploads/2025/08/Canaries_BrynjolfssonChandarChen.pdf
 
-**Note 13.**
+**Note 14.**
 
 > The economy as a whole grew too, but output per person in the whole economy rose only 30-fold over the same years.
 
 Bessen (2019): "from 1810 to 2011, real GDP per capita rose 30-fold, but output per hour in cotton textiles rose over 800-fold."
 
-**Note 14.**
+**Note 15.**
 
 > From then on, over the following decades, new machines came to cost jobs in those industries instead of adding them.
 
 Bessen (2019): estimates of the elasticity of demand were "significantly greater than one" in the early years (1820 textiles, 1870 steel, 1910 cars) and "all are less than one" by 1950 (1951 for cars).
 
-**Note 15.**
+**Note 16.**
 
 > In the near future, he writes, the main effect of automation may be "a major reallocation of jobs even if it does not permanently eliminate large numbers of jobs." And he adds: "This kind of change can be highly disruptive nevertheless."
 
 Bessen (2019).
 
-**Note 16.**
+**Note 17.**
 
 > Automation took about 0.7% a year, and new tasks added back only 0.35%.
 
 D. Acemoglu and P. Restrepo, "Automation and New Tasks: How Technology Displaces and Reinstates Labor", *Journal of Economic Perspectives* 33(2), 2019. Figures from NBER Working Paper 25684 (2019). https://www.nber.org/system/files/working_papers/w25684/w25684.pdf
 
-**Note 17.**
+**Note 18.**
 
 > Their answer was about 60%.
 
 Autor, Chin, Salomons and Seegmiller, "New Frontiers: The Origins and Content of New Work, 1940–2018", NBER Working Paper 30389 (2022). https://www.nber.org/system/files/working_papers/w30389/w30389.pdf
 
-**Note 18.**
+**Note 19.**
 
 > Since about 1980, they found, the pressure that removes old work has grown stronger, and the pull that creates new work has not.
 
 Autor et al. (2022), conclusion: "the demand-eroding effects of automation innovations have intensified in the last four decades while the demand-increasing effects of augmentation innovations have not."
 
-**Note 19.**
+**Note 20.**
 
 > Brynjolfsson, Chandar and Chen, working from the records of the payroll firm ADP, find "no evidence of widespread, economy-wide job displacement." In Denmark, where adoption surveys can be linked to official records, the economists Humlum and Vestergaard could rule out effects on pay or hours worked larger than 2%, two years after ChatGPT arrived.
 
 Brynjolfsson, Chandar and Chen (August 2026 update), fact 1. A. Humlum and E. Vestergaard, "Still Waters, Rapid Currents: Early Labor Market Transformation under Generative AI", NBER Working Paper 33777 (revised March 2026). https://www.nber.org/system/files/working_papers/w33777/w33777.pdf
 
-**Note 20.**
+**Note 21.**
 
 > The authors call these early signals, "canaries in the coal mine", and they do not claim AI caused them.
 
 Brynjolfsson, Chandar and Chen (August 2026 update), facts 2, 4 and 5. The 19% is the shortfall against the level employment would have reached had it kept pace with less-exposed peers.
 
-**Note 21.**
+**Note 22.**
 
 > In jobs where people mainly use it as a helper, employment is flat or rising, and experienced workers do best.
 
-Brynjolfsson, Chandar and Chen, *Canaries in the Coal Mine?*, August 2026 update, fact 5.
+Brynjolfsson, Chandar and Chen (August 2026 update), fact 5: losses are concentrated in jobs where AI is used mainly to automate tasks; where it is used mainly to augment work, employment is flat or rising. https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf (added 2026-10-22 when the credit for this paragraph was restored).
 
-**Note 22.**
+**Note 23.**
 
 > "If automation proceeds sufficiently slowly," they also write, "then there is always enough work for humans, and wages may rise forever."
 
@@ -856,6 +874,26 @@ Brynjolfsson, Chandar and Chen (August 2026 update): abstract (facts 3 and 6, ca
 
 **Note 19.**
 
+> From May 2022 to May 2025, the fifth of occupations most exposed to AI grew about as fast as the least exposed fifth: 0.45 percentage points a year faster, with a 95% interval running from 0.97 slower to 1.87 faster, against a gap of 0.02 before ChatGPT.
+
+Our calculation, pre-registered test T4 (exposure), code in `analysis/part3/t4_t5/`, results in
+`analysis/results_part3_t4_t5.json`, red-team checks in `analysis/part3/redteam/rt_t4_t5.py` (REDTEAM.md, T4). Data:
+BLS, Occupational Employment and Wage Statistics, national estimates, May 2016, 2019, 2022 and 2025 (Wayback Machine
+copies of bls.gov files, e.g.
+https://web.archive.org/web/20260516122846id_/https://www.bls.gov/oes/special-requests/oesm25nat.zip), occupations
+joined across SOC 2010 and 2018 with the BLS crosswalk
+(https://web.archive.org/web/20201016183750id_/https://www.bls.gov/soc/2018/soc_2010_to_2018_crosswalk.xlsx); 762
+occupation units split into fifths by exposure. Exposure: Eloundou, Manning, Mishkin and Rock, "GPTs are GPTs: An
+Early Look at the Labor Market Impact Potential of Large Language Models", arXiv:2303.10130 (v5), human-rated beta
+score, from https://github.com/openai/GPTs-are-GPTs (MIT License, Copyright (c) 2024 OpenAI). Growth is employment
+growth per year of each fifth; the effect is top minus bottom fifth, 2022-2025, +0.45 points a year (95% bootstrap
+interval -0.97 to +1.87); placebo 2016-2019, +0.02. The interval rules out a shortfall of more than about 1 point a
+year; smaller effects cannot be seen. Caveats: exposure measures what LLMs could do, rated in 2023, not use; OEWS May
+estimates pool three years of survey panels and all ages, so the young-worker gap found by Brynjolfsson, Chandar and
+Chen in ADP payroll data would not show here.
+
+**Note 20.**
+
 > Raising low-skill workers' productivity at some tasks may still widen inequality, he shows in theory, if AI creates no new tasks for them.
 
 D. Acemoglu, "The Simple Macroeconomics of AI", NBER Working Paper 32487, May 2024: "no more than a 0.66% increase in total factor productivity (TFP) over 10 years", "less than 0.53%" with hard-to-learn tasks; "even when AI improves the productivity of low-skill workers in certain tasks (without creating new tasks for them), this may increase rather than reduce inequality." https://www.nber.org/system/files/working_papers/w32487/w32487.pdf
@@ -1057,6 +1095,52 @@ Reuters, via Yahoo Finance, 27 July 2025. Reuters gives the cut as "roughly 12,2
 Zerodha, *The Daily Brief* (note 17). A lakh is 100,000. https://thedailybrief.zerodha.com/p/it-results-ai-impact-indigo-loss-fuel-costs-weak-rupee
 
 **Note 21.**
+
+> Added up from the firms' own reports, the combined staff of the four largest Indian IT firms (TCS, Infosys, Wipro and HCLTech) peaked in March 2023, and by June 2026 it was 3.6% below that peak.
+
+Firms' own reported total headcounts, summed by us; every figure, page and saved copy is in
+`analysis/data/part3/t1_t6/it_headcounts.csv` (sources in `analysis/data/part3/t1_t6/SOURCES.md`), retrieved
+2026-10-22. March 2023: TCS 614,795, Infosys 343,234, Wipro 256,921, HCLTech 225,944; total 1,440,894. June 2026:
+TCS 593,798, Infosys 328,062, Wipro 243,044, HCLTech 223,889; total 1,388,793, which is 3.6% below March 2023.
+Sources: TCS, Q4 FY2022-23 Fact Sheet, p. 18,
+https://web.archive.org/web/20230511130443id_/https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2022-23/q4/Presentations/Q4%20FY%202022-23%20Fact%20sheet.pdf ,
+and Q1 2026-27 Fact Sheet, p. 12,
+https://web.archive.org/web/20260828130818id_/https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2026-27/q1/Presentations/Q1%202026-27%20Fact%20Sheet.pdf ;
+Infosys, Q4 2022-23 fact sheet, p. 2,
+https://web.archive.org/web/20251128200537id_/https://www.infosys.com/investors/reports-filings/quarterly-results/2022-2023/q4/documents/fact-sheet.pdf ,
+and Q1 2026-27 fact sheet, p. 2,
+https://web.archive.org/web/20260828130817id_/https://www.infosys.com/investors/reports-filings/quarterly-results/2026-2027/q1/documents/fact-sheet.pdf ;
+Wipro, Q4 FY23 datasheet, p. 4,
+https://www.wipro.com/content/dam/nexus/en/investor/quarterly-results/2022-2023/q4fy23/datasheet-q4fy23.pdf , and
+Q1 FY27 datasheet, p. 3,
+https://www.wipro.com/content/dam/nexus/en/investor/quarterly-results/2026-2027/q1fy27/datasheet-q1fy27.pdf ;
+HCLTech, Q4 FY24 Investor Release, p. 20,
+https://www.hcltech.com/sites/default/files/documents/investor-reports/HCLTech_Q4_FY24_Investor_Release.pdf , and
+Q1 FY27 Investor Release, p. 9,
+https://www.hcltech.com/sites/default/files/documents/investor-reports/HCLTech_Q1_FY27_Investor_Release.pdf .
+Wipro counts are as first reported: March 2023 was later restated to 258,570 to include the ISRE business. HCLTech's
+FY25 figure includes a 7,398 reduction from a divestiture, and HCLTech reached a new high (230,339) in September
+2026. June 2026 is the latest date with all four firms (Infosys's September 2026 figure was not found). The four
+firms grew 49.8% from March 2019 to the 2023 peak, a hiring burst that predates ChatGPT.
+
+**Note 22.**
+
+> In the United States, jobs in computer systems design were 10.7% below their 2015-19 trend in the year to September 2026, and have fallen about 5% since December 2022.
+
+Our calculation, descriptive series T6, code in `analysis/part3/t1_t6/`, results in
+`analysis/results_part3_t1_t6.json`, red-team checks in `analysis/part3/redteam/rt_t1_t6.py` (REDTEAM.md, T6).
+Data: BLS, Current Employment Statistics, series CES6054150001, all employees, computer systems design and related
+services (NAICS 5415), seasonally adjusted,
+https://data.bls.gov/timeseries/CES6054150001?from_year=2010&to_year=2026&output_view=data&include_graphs=false ,
+retrieved 2026-10-22 (August and September 2026 preliminary; the March 2026 benchmark revision is not yet in them).
+Average employment October 2025 to September 2026 was 2,370.8 thousand against 2,654.2 thousand on a straight line
+fitted to 2015-2019, a gap of -10.7% (95% bootstrap interval -11.6 to -9.7, covering only the trend line's
+uncertainty). Employment fell 5.1% from December 2022. In pre-AI history, 15 of 19 straight-line trends extended
+the same distance missed by at least 10.7 points, so the gap is not on its own evidence about AI; the whole
+information sector is also 11.4% below its trend. The gap coincides with higher interest rates (2022-23) and the end
+of pandemic over-hiring.
+
+**Note 23.**
 
 > "We believe the pie will increase." He expects AI to raise output by 20% to 30% in conventional IT work, with the gains going to work clients have long put off.
 
@@ -1335,6 +1419,29 @@ Bank of America, press release, 20 August 2025. https://newsroom.bankofamerica.c
 > The figure that matters most here is another one: customers needed 20% less follow-up contact.
 
 Telstra, media release "Telstra scales up AI adoption", 7 February 2024. https://www.telstra.com.au/aboutus/media/media-releases/telstra-scales-up-ai-adoption
+
+**Note 24.**
+
+> They say nothing for or against the firm-level design advice in this chapter.
+
+Our calculation, pre-registered test T4 (augmentation split), code in `analysis/part3/t4_t5/`, results in
+`analysis/results_part3_t4_t5.json`, red-team checks in `analysis/part3/redteam/rt_t4_t5.py` and `rt_extra.py`
+(REDTEAM.md, T4 augmentation). Employment data as in note p3b (BLS OEWS, May 2016-2025). Augmentation share: Anthropic
+Economic Index, release 2025-03-27 (the README's citation for this release: Handa, K. et al., "Which Economic Tasks
+are Performed with AI? Evidence from Millions of Claude Conversations", arXiv:2503.04761, 2025),
+https://huggingface.co/datasets/Anthropic/EconomicIndex, CC BY; modified (aggregated to occupations). Tasks were
+moved to occupations with O*NET data: "This includes information from the O*NET 31.0 Database by the U.S. Department
+of Labor, Employment and Training Administration (USDOL/ETA). Used under the CC BY 4.0 license. O*NET® is a trademark
+of USDOL/ETA. The author has modified all or some of this information. USDOL/ETA has not approved, endorsed, or tested these
+modifications." (wording as recorded in `analysis/data/part3/t4_t5/SOURCES.md`; licence at
+https://www.onetcenter.org/license_db.html; crosswalk
+https://www.onetcenter.org/taxonomy/2019/walk/2010_to_2019_Crosswalk.csv). Within the two most exposed
+fifths (282 occupation units with usage data), the more augmentative half grew -1.05 points a year relative to the
+more automated half, 2022-2025 (95% interval -2.60 to +0.68), against -0.91 in 2016-2019; main minus placebo -0.14
+(interval -2.20 to +1.84). Caveats: the measure comes from one company's chatbot conversations in early 2025, after
+most of the outcome window; usage per occupation is thin; it describes how people phrase requests, not how employers
+deploy AI. The test asks about occupations, not firms, and neither supports nor contradicts chapter 9's firm-level
+advice.
 
 ## Chapter 10: Redeploy and Retrain
 
@@ -1830,33 +1937,455 @@ J. S. Allen, "Monitoring AI Adoption in the U.S. Economy", FEDS Notes, Federal R
 
 Allen, FEDS Notes (3 April 2026); Bonney et al., NBER w35141, footnote 29. https://www.federalreserve.gov/econres/notes/feds-notes/monitoring-ai-adoption-in-the-u-s-economy-20260403.html
 
+## Chapter 13: Where the Other Jobs Come From
+
+**Note 1.**
+
+> Across all its members, more than before raised a shortage of workers without being asked.
+
+Associated Builders and Contractors, press release on its member survey (conducted 20 August to 4 September 2026), 15 September 2026, quoting chief economist Anirban Basu: "Data centers continue to keep contractors busy even as activity softens in other segments. Although the backlog gap between contractors with and without data center work narrowed in August (9.9 vs. 8.3 months, respectively), that appears to reflect more contractors securing work in the data center segment rather than a broader structural trend. Roughly 1 in 6 ABC members is currently under contract to work on a data center, the highest proportion on record." He added that there was "a sharp increase in the number of contractors who, unprompted, mentioned labor shortages in the survey." Cached copy: sources/cache/text/d4aaa1a766db.txt. Moved 2026-10-22 from route one to the chapter's opening; the label stays [^14], so it prints as note 1. https://www.abc.org/News-Media/News-Releases/abc-survey-1-in-6-members-perform-data-center-work-backlog-rebounds-in-august (retrieved 2026-10-22).
+
+**Note 2.**
+
+> There are about 51,000 more, a gap of 13.6%.
+
+BLS, Current Employment Statistics, CES4422110001 (electric power generation, transmission and distribution, NAICS 2211, seasonally adjusted, thousands), https://data.bls.gov/timeseries/CES4422110001?from_year=2010&to_year=2026&output_view=data&include_graphs=false, retrieved 2026-10-22. Our calculation, analysis/part3/t1_t6/analyze.py, results in analysis/results_part3_t1_t6.json: average September 2025 to August 2026 426.2k against a 2015-2019 straight-line trend of 375.2k, gap +13.6% [95% interval 12.0 to 15.1]; trend slope about -2k a year. Research note: research_notes/part3-buildout-research-it.md §1.
+
+**Note 3.**
+
+> Since December 2022, its payroll has grown by 8.9%.
+
+As note 1. The gap in calendar 2022 (+1.8%) is an exploratory figure added after the results were seen, labelled so in analysis/results_part3_t1_t6.json. The +8.9% change since December 2022 is from our red-team review (not part of the original plan), "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T1 table (rt_t1_t6.json), which also uses the long CES series 1990-2026 in analysis/part3/redteam/data/ces_long.csv.
+
+**Note 4.**
+
+> And in the decades before AI, a straight line carried this far ahead had missed by as much as this in about one period in four.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T1, point 2: natural-gas distribution (NAICS 2212) +11.8% above its 2015-19 trend (+4.8% in 2022), water utilities +4.3%; candidates named there: grid and pipeline replacement, retirements and rehiring, IRA-funded investment (enacted August 2022); 2211 gap rose 11.8 points after 2022 against 7.0 for gas. Same-horizon comparison: 19 overlapping pre-AI trend windows (1990-2008), 5 of 19 missed by at least as much as 2211 (rank p 0.30). Not pre-registered.
+
+**Note 5.**
+
+> The file records the few things we had glimpsed while checking file layouts before every detail was fixed.
+
+Our pre-registration, "Pre-registration: the book's own tests (Part 3)", analysis/PREREGISTRATION.md (commit 93726bb, 22 October 2026, written before any of the tests was run and before most of their data were downloaded; the OEWS tables had been cached earlier for other chapters, and the T4/T5 files were downloaded before every detail was fixed). Its "Deviations" section records, with dates, the implementation details fixed before results, the few raw values seen while checking file layouts (a few NAICS 54 application counts, 2010-2013 values of NAICS 518, OEWS file layouts), and, labelled separately, the additions made after the results were seen.
+
+**Note 6.**
+
+> Then a separate reviewer, our red team, tried to break every result, in both directions, and we report what survived.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md. None of it was part of the original plan (not pre-registered); it challenges the pre-registered results and does not replace them.
+
+**Note 7.**
+
+> Power-line construction was 10.6% below (12.6 to 8.3 below), electricians 8.6% below (11.0 to 6.1 below), and semiconductors 2.9% below, with an interval running from 7.4 below to 2.6 above.
+
+BLS, Current Employment Statistics, series CES4422110001 (https://data.bls.gov/timeseries/CES4422110001?from_year=2010&to_year=2026&output_view=data&include_graphs=false), CES5051800001 (https://data.bls.gov/timeseries/CES5051800001?from_year=2010&to_year=2026&output_view=data&include_graphs=false), CES2023713001 (https://data.bls.gov/timeseries/CES2023713001?from_year=2010&to_year=2026&output_view=data&include_graphs=false) and CES3133440001 (https://data.bls.gov/timeseries/CES3133440001?from_year=2010&to_year=2026&output_view=data&include_graphs=false), retrieved 2026-10-22; and BLS, Occupational Employment and Wage Statistics (OEWS), national May tables, via Wayback Machine copies of bls.gov, e.g. https://web.archive.org/web/20260516122846id_/https://www.bls.gov/oes/special-requests/oesm25nat.zip (May 2025) and https://web.archive.org/web/20240522032635id_/https://www.bls.gov/oes/2022/may/oes_nat.htm (May 2022); full list in analysis/data/part3/t1_t6/SOURCES.md and analysis/data/part3/t4_t5/SOURCES.md, electricians 47-2111. Our calculation, analysis/part3/t1_t6/analyze.py; analysis/results_part3_t1_t6.json. Gaps in % of the 2015-2019 trend, latest 12 months (OEWS: May 2025): 2211 +13.6 [12.0, 15.1]; 518 +9.4 [7.9, 11.4]; 23713 -10.6 [-12.6, -8.3]; electricians -8.6 [-11.0, -6.1]; 3344 -2.9 [-7.4, 2.6]. Intervals: moving-block bootstrap of trend residuals, 10,000 resamples, seed 20261022; they cover uncertainty in the line only.
+
+**Note 8.**
+
+> But today's gaps sit six or seven years past the end of their lines, and lines drift further the longer they run, so that comparison was too short to judge either way.
+
+Our pre-registration, "Pre-registration: the book's own tests (Part 3)", analysis/PREREGISTRATION.md (commit 93726bb, 22 October 2026, written before any of the tests was run and before most of their data were downloaded; the OEWS tables had been cached earlier for other chapters, and the T4/T5 files were downloaded before every detail was fixed), T1 placebo (trend 2012-2016, gap over 2017-2019) and verdict rule; by it 2211 and 518 support, 23713, 3344 and electricians go against (analysis/results_part3_t1_t6.json). Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T1 "Why it is needed" (not part of the original plan): the planned comparison measures 0-3 years after its trend window, the main test 6-7 years after (69-81 months). Planned comparison for 5415 (computer systems design): -2.8% [-3.7, -1.8].
+
+**Note 9.**
+
+> In pre-AI history back to 1990, the red team found, lines carried the same distance missed by an average of 26 to 58 points for three of these series, and by about 9 points for electric power.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T1, point 1: mean absolute same-horizon pre-AI gap 30.6 (518), 58.2 (3344), 25.9 (23713) and 8.7 points (2211). Not pre-registered. Electricians have only 5 such windows, all distorted by the housing bust, and are not counted.
+
+**Note 10.**
+
+> Since December 2022 its employment has fallen 6.6%.
+
+BLS CES5051800001, https://data.bls.gov/timeseries/CES5051800001?from_year=2010&to_year=2026&output_view=data&include_graphs=false; our calculation (analysis/results_part3_t1_t6.json, exploratory 2022 gap +22.7% [21.6, 24.2]); our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T1, point 3 (-6.6% since December 2022). The 2022 gap was added after the results were seen; the change since December 2022 is not part of the original plan.
+
+**Note 11.**
+
+> Electricians were already 8.7% below theirs in May 2022.
+
+BLS CES2023713001, https://data.bls.gov/timeseries/CES2023713001?from_year=2010&to_year=2026&output_view=data&include_graphs=false; BLS, Occupational Employment and Wage Statistics (OEWS), national May tables, via Wayback Machine copies of bls.gov, e.g. https://web.archive.org/web/20260516122846id_/https://www.bls.gov/oes/special-requests/oesm25nat.zip (May 2025) and https://web.archive.org/web/20240522032635id_/https://www.bls.gov/oes/2022/may/oes_nat.htm (May 2022); full list in analysis/data/part3/t1_t6/SOURCES.md and analysis/data/part3/t4_t5/SOURCES.md, electricians 47-2111 (690k May 2022, 757,220 May 2025). Our calculation, research_notes/part3-buildout-research-it.md §1; electricians' May 2022 gap -8.7% is exploratory, added after the results were seen.
+
+**Note 12.**
+
+> On the same method, total private employment sits 5.3% below its own line, and specialty construction trades 10.5% below.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T1, point 4: total private employment -5.3% below its 2015-19 line; specialty trades -10.5%; nonresidential building -9.6%. Not pre-registered.
+
+**Note 13.**
+
+> Whichever way it pointed, it would be a poor test.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T1, point 5 (CHIPS Act money mostly pays construction workers, counted in construction; 3344 covers all electronic components; much of the chip supply chain abroad). Not part of the original plan (not pre-registered).
+
+**Note 14.**
+
+> Private spending on building US data centres ran at an annual rate of about $85 billion in August 2026 (a preliminary figure), against $8.8 billion in August 2019.
+
+US Census Bureau, Construction Spending (C30), private construction, seasonally adjusted annual rate, "Data center", release of 1 October 2026: $84.95bn (August 2026, preliminary) against $8.8bn (August 2019). https://www.census.gov/construction/c30/xlsx/privsatime.xlsx (retrieved 2026-10-22). The "tenfold" in the text is our calculation from the same file.
+
+**Note 15.**
+
+> Federal statisticians project electrician jobs to grow 9% from 2025 to 2035, with about 72,700 openings a year, and name data centres among the reasons.
+
+BLS, Occupational Outlook Handbook, "Electricians", last modified 27 August 2026: employment projected to grow 9% from 2025 to 2035, about 72,700 openings a year; names data-centre demand. https://www.bls.gov/ooh/construction-and-extraction/electricians.htm (retrieved 2026-10-22).
+
+**Note 16.**
+
+> Measured against the 2016-2019 pattern, the difference was +0.1%, and the range it probably lies in runs from about 10% down to about 10% up.
+
+US Census Bureau, Business Formation Statistics, monthly, seasonally adjusted, by NAICS sector, https://www.census.gov/econ/bfs/csv/bfs_monthly.csv (release current on 2026-10-22, data to September 2026); definitions https://www.census.gov/econ/bfs/definitions.html; methodology https://www.census.gov/econ/bfs/methodology.html, series BA_HBA. Our calculation, analysis/part3/t2_t3/analysis.py; analysis/results_part3_t2_t3.json: exposed (51, 54) minus less exposed (23, 72, 81), mean of sector logs, December 2022 to September 2026 against the 2016-2019 trend: +0.1% [95% interval -10.2% to +9.6%]. Research note: research_notes/part3-newfirms-spending.md §1.
+
+**Note 17.**
+
+> Fit the line to a longer stretch of years, or use no line at all, and the exposed sectors fall behind.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T2: without 72, +0.090 log points; 54 alone against 23 + 81, +0.185 (about +20%); no trend -0.205; trend 2005-19 -0.115; 2010-19 -0.025. Not pre-registered.
+
+**Note 18.**
+
+> Taken alone, professional services applications rose about 21% above their own trend, but restaurants and hotels rose 32%, and information barely moved.
+
+US Census Bureau, Business Formation Statistics, monthly, seasonally adjusted, by NAICS sector, https://www.census.gov/econ/bfs/csv/bfs_monthly.csv (release current on 2026-10-22, data to September 2026); definitions https://www.census.gov/econ/bfs/definitions.html; methodology https://www.census.gov/econ/bfs/methodology.html; our calculation (analysis/results_part3_t2_t3.json), each sector against its own 2016-2019 trend, description only: professional services +21.5% (8.8 to 31.9); accommodation and food +31.9% (24.0 to 37.3); information +0.5% (-18.7 to 21.0).
+
+**Note 19.**
+
+> And it is a forecast from a model, weighting each application by its predicted chance of hiring; the count of firms that actually hired runs only as far as applications made in December 2022.
+
+US Census Bureau, Business Formation Statistics, monthly, seasonally adjusted, by NAICS sector, https://www.census.gov/econ/bfs/csv/bfs_monthly.csv (release current on 2026-10-22, data to September 2026); definitions https://www.census.gov/econ/bfs/definitions.html; methodology https://www.census.gov/econ/bfs/methodology.html, series BF_PBF4Q (projected employer business formations within 4 quarters). Our calculation: +12.1% [-3.3%, +24.6%], mean of sector logs. Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T2: other trend choices -0.016 to +0.042 log points; by year 2023 -0.014, 2024 +0.048, 2025 +0.159, 2026 (Jan-Sep) +0.328; projected formations per application rose in 51, 54 and also 81. Counted formations (BF_BF4Q) end with December 2022 applications (Census BFS methodology page, read 2026-10-22). By the pre-registered T2 rule the secondary counts as support, a pass (analysis/results_part3_t2_t3.json, BF_PBF4Q_meanlog verdict_for_book: true). The red-team checks are not part of the original plan.
+
+**Note 20.**
+
+> A Census working paper by Dinlersoz, Dogan and Zolas, published in March 2024, fits that cautious reading: it found applications for AI-related businesses jumping in 2023, and those firms more likely to become employers but less likely to survive.
+
+Dinlersoz, Dogan and Zolas, "Starting Up AI", US Census Bureau, Center for Economic Studies Working Paper 24-09, March 2024. https://census.gov/library/working-papers/2024/adrm/CES-WP-24-09.html (retrieved 2026-10-22).
+
+**Note 21.**
+
+> The correlation was -0.015, and the range it probably lies in runs from -0.27 to 0.28.
+
+BEA, NIPA Tables 2.4.5 (Personal Consumption Expenditures by Type of Product) and 2.4.4 (price indexes), annual, flat files at https://apps.bea.gov/national/Release/TXT/ (NipaDataA.txt), retrieved 2026-10-22. Our calculation, analysis/part3/t2_t3/analysis.py: 70 detailed PCE lines, 1959-2019, Pearson correlation between change in log relative price and change in log spending share r = -0.015 [95% interval -0.27, 0.28], permutation p = 0.90; slope -0.017 (implied elasticity of substitution about 1). analysis/results_part3_t2_t3.json.
+
+**Note 22.**
+
+> On the plain average they didn't, and a forecast built on the 1959-1999 pattern predicted 2000-2019 worse than assuming nothing changed.
+
+Our calculation, analysis/results_part3_t2_t3.json: the 1959-1999 relationship predicts 2000-2019 share changes with skill -0.42 [95% interval -1.22, 0.04] against a no-change forecast (pre-registered out-of-sample check).
+
+**Note 23.**
+
+> Weighting each category by its size tilts the result: cheaper categories then tended to lose some share.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T3-A: weighted by 2019 spending, slope +0.25 [0.02, 0.68]; by 1959 spending +0.18 [-0.03, 0.53]; robust and trimmed versions about +0.17 to +0.25. Not pre-registered.
+
+**Note 24.**
+
+> The rank correlation across 18 matched categories was 0.67, with a range from 0.25 to 0.89.
+
+BEA, NIPA Tables 2.4.5 (Personal Consumption Expenditures by Type of Product) and 2.4.4 (price indexes), annual, flat files at https://apps.bea.gov/national/Release/TXT/ (NipaDataA.txt), retrieved 2026-10-22; BLS CES annual averages for the matched industries (pages listed in analysis/data/part3/t2_t3/SOURCES.md); match table analysis/part3/t2_t3/match_table.csv, written before results. Our calculation: Spearman rho 0.67 [95% interval 0.25, 0.89], 18 categories, 1990-2019, permutation p = 0.0025. Chart: analysis/part3/t2_t3/charts/t3_spending_jobs.png.
+
+**Note 25.**
+
+> It holds when any single category is dropped, with the correlation staying between 0.60 and 0.75, and it holds at 0.64 without health care, medicines and social services.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T3-B: leave-one-out rho 0.60 to 0.75; without health care, pharmaceuticals and social services 0.64. Not pre-registered.
+
+**Note 26.**
+
+> It is also the only result that still passes when all our tests are judged together under a stricter standard, as chapter 14 explains.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, "Multiple comparisons" (Holm correction across the six tests with same-horizon benchmarks for T1): only T3-B survives (p = 0.0025). Not pre-registered. Chapter 14 explains the method.
+
+**Note 27.**
+
+> Every category that gained both spending and jobs share also got more expensive relative to other things.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T3-B: health care +0.27 log points of relative price, education +0.94, recreation +0.21, social services +0.25, food services +0.21, housing +0.26. Not part of the original plan (not pre-registered).
+
+**Note 28.**
+
+> And across the 18, the link between rising price and rising share is only suggestive.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T3-B and T3-A point 3: 14 of 18 categories got relatively dearer; across the 18, relative price and spending-share change r = +0.44 [0.03, 0.75], permutation p = 0.07 ("suggestive"); labour is most of the cost in these services. Not part of the original plan (not pre-registered).
+
 **Note 29.**
 
-> At the low end, Acemoglu, as chapter 5 reported, estimated in 2024 that AI would add no more than 0.66% to total factor productivity over ten years in all.
+> On any version of our numbers, a large cut in the price of professional services would move little spending either way, tens of billions of dollars at most, next to a consumer economy of about $20 trillion; chapter 14 gives the range.
 
-D. Acemoglu, "The Simple Macroeconomics of AI", NBER Working Paper 32487, May 2024, working-paper version. This is a ten-year total, while the OECD figures in note 30 are per year. https://www.nber.org/system/files/working_papers/w32487/w32487.pdf
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T3 projection: at a 40% relative price cut in professional services, the pre-registered interval runs from a $59bn loss to a $51bn gain in freed spending; spending-weighted or trimmed slopes give $32-36bn freed; tens of billions at most either way, all small next to roughly $20 trillion of consumer spending. Our projection in research_notes/part3-newfirms-spending.md §2 (data to 2025). Not part of the original plan (not pre-registered).
 
 **Note 30.**
 
-> The OECD's economists put the range far higher, adding 0.25 to 0.6 percentage points to American total factor productivity growth every year for a decade.
+> From 1990 to 2019, about 39% of the gains in budget share among our 18 categories went to health care, 19% to medicines, 18% to finance and insurance and 10% to recreation.
 
-F. Filippucci, P. Gal and M. Schief, "Miracle or Myth? Assessing the macroeconomic productivity gains from Artificial Intelligence", OECD Artificial Intelligence Papers No. 29, November 2024, as summarised by the authors on the OECD ECOSCOPE blog, 26 November 2024: total factor productivity, United States. https://oecdecoscope.blog/2024/11/26/miracle-or-myth-assessing-the-macroeconomic-productivity-gains-from-artificial-intelligence/
+BEA, NIPA Tables 2.4.5 (Personal Consumption Expenditures by Type of Product) and 2.4.4 (price indexes), annual, flat files at https://apps.bea.gov/national/Release/TXT/ (NipaDataA.txt), retrieved 2026-10-22; our calculation (research_notes/part3-newfirms-spending.md §2): shares of the 1990-2019 gains in spending share among the 18 matched categories: health care 39%, medicines 19%, finance and insurance 18%, recreation 10%, social services 5%, education 4.5%, housing 3%. Description of history, not a forecast.
 
 **Note 31.**
 
-> The Penn Wharton Budget Model has AI raising productivity and GDP by 1.5% by 2035.
+> Most of the rise came before AI: the industry went from about 732,000 jobs in 2019 to about 893,000 in 2022, edged up to about 934,000 in 2024, and has slipped back since.
 
-Penn Wharton Budget Model, "The Projected Impact of Generative AI on Future Productivity Growth", 8 September 2025. https://budgetmodel.wharton.upenn.edu/p/2025-09-08-the-projected-impact-of-generative-ai-on-future-productivity-growth/
+BLS CES6054170001 (scientific research and development services, NAICS 5417), https://data.bls.gov/timeseries/CES6054170001?from_year=2010&to_year=2026&output_view=data&include_graphs=false. Our calculation, analysis/results_part3_t1_t6.json: 913.2k against trend 828.7k, +10.2% [3.1, 19.2]; annual averages 732k (2019), 893k (2022), 929k (2023), 934k (2024, the highest), 922k (2025), 914k (2026, January-September), from the long CES series in analysis/part3/redteam/data/ces_long.csv. Description; no test (T6). Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T6, and analysis/part3/redteam/rt_t1_t6.json (CES6054170001): at the same distance, 8 of 19 pre-AI windows (1990-2008) missed by at least 10.2 points in absolute terms (share 0.421; same-horizon rank p 0.45). Not part of the original plan (not pre-registered).
 
 **Note 32.**
 
-> In the same survey, as chapter 2 noted, half of employers plan to shift staff from shrinking roles into growing ones, and 40% plan to cut staff where skills become less relevant.
+> Scientists counted by occupation, wherever they work, moved later: they were at their old line in May 2022 and 6.6% above it by May 2025, a figure that rests on five yearly points and on joining two versions of the occupation codes.
 
-World Economic Forum, *Future of Jobs Report 2025*, January 2025 (employer survey, 2025 to 2030). https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf
+BLS, Occupational Employment and Wage Statistics (OEWS), national May tables, via Wayback Machine copies of bls.gov, e.g. https://web.archive.org/web/20260516122846id_/https://www.bls.gov/oes/special-requests/oesm25nat.zip (May 2025) and https://web.archive.org/web/20240522032635id_/https://www.bls.gov/oes/2022/may/oes_nat.htm (May 2022); full list in analysis/data/part3/t1_t6/SOURCES.md and analysis/data/part3/t4_t5/SOURCES.md, major group 19-0000, harmonised to SOC 2010 by removing 19-5011 and 19-5012 from 2019 on (PREREGISTRATION deviations). Our calculation: gap -1.4% (May 2022, exploratory) and +6.6% [4.3, 9.3] (May 2025). The May 2022 gap was added after the results were seen.
 
 **Note 33.**
 
-> The IMF warned in January 2026 that the spread of demand for AI skills goes with lower employment in jobs where AI can do much of the work and helps little with the rest, that this is a challenge for young workers, and that it may shrink the middle class.
+> The link is a correlation; it doesn't show that AI caused either.
 
-Jaumotte, Kim, Koll, E. Li, L. Li, Melina, Song and Tavares, "Bridging Skill Gaps for the Future: New Jobs Creation in the AI Age", IMF Staff Discussion Note, 14 January 2026. Summary page read; the full text was not. https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2026/01/09/Bridging-Skill-Gaps-for-the-Future-New-Jobs-Creation-in-the-AI-Age-572136
+Hao, Xu, Li and Evans, "Artificial intelligence tools expand scientists' impact but contract science's focus", Nature, 14 January 2026: 3.02 times as many papers, 4.84 times as many citations, topics narrowed by 4.63%; correlational. https://www.nature.com/articles/s41586-025-09922-y (retrieved 2026-10-22).
+
+**Note 34.**
+
+> In May 2025, in a statement on its economics department's site, MIT said it had "no confidence in the provenance, reliability or validity of the data", and asked for the paper to be withdrawn. arXiv's administrators withdrew it.
+
+MIT Department of Economics, "Assuring an accurate research record", 16 May 2025: MIT "has no confidence in the provenance, reliability or validity of the data and has no confidence in the veracity of the research contained in the paper"; MIT "has contacted arXiv to formally request that the paper be withdrawn". https://economics.mit.edu/news/assuring-accurate-research-record. arXiv record of arXiv:2412.17866 (Toner-Rodgers, "Artificial Intelligence, Scientific Discovery, and Product Innovation"; abstract describes a materials discovery technology in the R&D lab of a large US firm): "This paper has been withdrawn by arXiv Admin"; v1 21 December 2024, v2 (withdrawn) 20 May 2025. https://arxiv.org/abs/2412.17866 (both retrieved 2026-10-22).
+
+**Note 35.**
+
+> We scored every occupation on two measures from O\*NET, the federal government's database of what jobs involve: how much contact with other people the job requires, and how much it involves helping and caring for others.
+
+O*NET 31.0 Database (August 2026 release), Work Context 4.C.1.a.4 "Contact With Others" and Work Activities 4.A.4.a.5 "Assisting and Caring for Others", https://www.onetcenter.org/dl_files/database/db_31_0_text.zip, licence CC BY 4.0 (https://www.onetcenter.org/license_db.html). Score: mean of the z-scores of the two; our calculation, analysis/part3/t4_t5/analyse.py.
+
+**Note 36.**
+
+> So the increase was about 1.23 points, with a range from just below zero to 2.5, and that fell just short of the standard we fixed beforehand.
+
+BLS, Occupational Employment and Wage Statistics (OEWS), national May tables, via Wayback Machine copies of bls.gov, e.g. https://web.archive.org/web/20260516122846id_/https://www.bls.gov/oes/special-requests/oesm25nat.zip (May 2025) and https://web.archive.org/web/20240522032635id_/https://www.bls.gov/oes/2022/may/oes_nat.htm (May 2022); full list in analysis/data/part3/t1_t6/SOURCES.md and analysis/data/part3/t4_t5/SOURCES.md. Our calculation, analysis/results_part3_t4_t5.json: most minus least person-facing fifth, May 2022 to May 2025, +2.57 pp a year [1.23, 3.99]; May 2016 to May 2019 +1.34; main minus placebo +1.23 [-0.08, 2.53]. Pre-registered verdict: not supported. Research note: research_notes/part3-occupations.md, T5.
+
+**Note 37.**
+
+> The red team found it held without health care, within broad occupation groups and in the shorter window from 2023 to 2025.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T5: without health care +2.23 [0.72, 3.91] (main minus placebo +1.68 [0.19, 3.25]); continuous score with major-group fixed effects +0.85 [0.33, 1.55] per SD; May 2023 to May 2025 +2.91 [1.71, 4.20]. Not pre-registered.
+
+**Note 38.**
+
+> Not all did: elementary school teachers, the third largest, were flat, and receptionists fell 3.4% a year.
+
+BLS, Occupational Employment and Wage Statistics (OEWS), national May tables, via Wayback Machine copies of bls.gov, e.g. https://web.archive.org/web/20260516122846id_/https://www.bls.gov/oes/special-requests/oesm25nat.zip (May 2025) and https://web.archive.org/web/20240522032635id_/https://www.bls.gov/oes/2022/may/oes_nat.htm (May 2022); full list in analysis/data/part3/t1_t6/SOURCES.md and analysis/data/part3/t4_t5/SOURCES.md; our calculation (research_notes/part3-occupations.md, T5): annual growth May 2022 to May 2025; analysis/results_part3_t4_t5.json, T5 top_fifth_largest (the twelve largest top-fifth occupations by 2022 employment): home health and personal care aides +7.1, registered nurses +3.2, elementary school teachers -0.1 (third largest), nursing assistants +3.4, teaching assistants +4.2, security guards +4.5, secondary school teachers +0.7, receptionists and information clerks -3.4 (% a year).
+
+**Note 39.**
+
+> An ageing population, the growth of home care paid for by Medicaid, pandemic relief money for schools and immigration into care work all fit the pattern, and none of them is AI.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T5, point 3: the top fifth is about 74% (of 2022 employment; analysis/part3/redteam/rt_t4_t5.json, top_fifth_emp_share_by_major_group: SOC groups 21, 25, 29, 31 and 33) health care, education, social services and protective service; plausible drivers named (ageing, Medicaid home-care growth, pandemic relief money for schools, immigration into care work). Candidates only; not measured. Not part of the original plan (not pre-registered).
+
+**Note 40.**
+
+> Allowing for each occupation's 2019-2022 growth left it at 2.5.
+
+Our pre-registration, "Pre-registration: the book's own tests (Part 3)", analysis/PREREGISTRATION.md (commit 93726bb, 22 October 2026, written before any of the tests was run and before most of their data were downloaded; the OEWS tables had been cached earlier for other chapters, and the T4/T5 files were downloaded before every detail was fixed), deviations of 2026-10-22 for T4 and T5 ("fixed before any employment growth was computed"): May 2022 estimates pool survey panels from November 2019 to May 2022; a 2019-2025 window and a control for 2019-2022 growth were declared there as labelled checks, not pre-registered. Results in analysis/results_part3_t4_t5.json, T5 sensitivity: window_2019_2025, most minus least person-facing +1.53 pp a year [0.16, 2.93] against +1.34 in 2016-2019 (difference +0.18 [-1.22, 1.58]); controlled_for_2019_2022_growth, +2.50 log points a year [1.39, 3.65] (uncontrolled +2.54). Both flagged pre_registered: false. research_notes/part3-occupations.md, caveat 1.
+
+**Note 41.**
+
+> As late as 2022 the American industry stood 2.4% above its line, and our planned comparison from before AI showed a shortfall of 2.8%, over a much shorter stretch.
+
+BLS CES6054150001 (computer systems design and related services, NAICS 5415), https://data.bls.gov/timeseries/CES6054150001?from_year=2010&to_year=2026&output_view=data&include_graphs=false. Our calculation, analysis/results_part3_t1_t6.json: 2,370.8k against trend 2,654.2k, -10.7% [-11.6, -9.7]; planned pre-AI comparison -2.8% [-3.7, -1.8] (2017-19 gap from a 2012-16 line); 2022 gap +2.4% (exploratory); about -5% since December 2022 (Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T6). The 2022 gap was added after the results were seen; the red-team checks were not part of the original plan.
+
+**Note 42.**
+
+> One of the four, HCLTech, reached a new high in September 2026, after the dip in the June quarter that chapter 7 noted.
+
+Firms' own reports: TCS and Infosys via Wayback Machine copies of their fact sheets (their sites block scripts); Wipro and HCLTech from wipro.com and hcltech.com. Four firms: 961,798 (March 2019), 1,440,894 (March 2023, +49.8%), 1,388,793 (June 2026, -3.6%); FY2022 +243,258; HCLTech 230,339 (September 2026). Infosys September 2026 not found. Wipro figures as first reported. June 2026 sources: TCS Q1 FY27 fact sheet, https://web.archive.org/web/20260828130818id_/https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2026-27/q1/Presentations/Q1%202026-27%20Fact%20Sheet.pdf; Infosys Q1 FY27 fact sheet, https://web.archive.org/web/20260828130817id_/https://www.infosys.com/investors/reports-filings/quarterly-results/2026-2027/q1/documents/fact-sheet.pdf; Wipro Q1 FY27 data sheet, https://www.wipro.com/content/dam/nexus/en/investor/quarterly-results/2026-2027/q1fy27/datasheet-q1fy27.pdf; HCLTech Q1 FY27 investor release, https://www.hcltech.com/sites/default/files/documents/investor-reports/HCLTech_Q1_FY27_Investor_Release.pdf. September 2026: HCLTech Q2 FY27 investor release, https://www.hcltech.com/sites/default/files/document/open/quarter-results/2026-10/hcltech-Q2-fy27-Investor-release.pdf (all retrieved 2026-10-22). URLs for each fact sheet and release, with Wayback copies, are listed in analysis/data/part3/t1_t6/raw/web/headcount_urls.csv and analysis/data/part3/t1_t6/it_headcounts.csv.
+
+**Note 43.**
+
+> The red team found that before AI a straight line carried this far ahead missed by at least as much in 15 of 19 periods, counting misses in either direction; 6 of the 19 had a shortfall this large.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T6: at the same horizon, 15 of 19 pre-AI windows missed by at least 10.7 points in absolute terms; 6 of 19 had a shortfall at least this large. Not pre-registered. The red team drops the earlier "3.9 times its placebo" comparison.
+
+**Note 44.**
+
+> The industry body Nasscom estimated, in February 2026, that direct Indian technology employment would reach about 6 million for the 2026 financial year, up 2.3%, so the industry as a whole kept adding people while its four largest firms shrank from their peak.
+
+Nasscom, Strategic Review 2026, Executive Summary, February 2026: estimate published February 2026: Indian direct tech employment about 6 million in FY26E (the 2026 financial year), up 2.3%, net addition 135,000. https://nasscom.in/modules/custom/nasscom_general/docs/Nasscom-Strategic%20Review-2026-Executive%20Summary.pdf (retrieved 2026-10-22).
+
+## Chapter 14: What the Data Say So Far, and How to Keep Score
+
+**Note 1.**
+
+> Over the same three years, market research analysts grew by about 4.0% a year, management analysts by 3.6% and human resources specialists by 3.0%.
+
+Our calculation, analysis/part3/t4_t5/analyse.py, results in analysis/results_part3_t4_t5.json (OEWS May 2022 and May 2025 national estimates, BLS, Wayback copies of https://www.bls.gov/oes/special-requests/oesm22nat.zip and oesm25nat.zip; exposure scores from Eloundou et al., 2023). Annualised growth May 2022 to May 2025: customer service representatives -3.4%, receptionists -3.4%, secretaries -2.2%, office clerks -0.7%; market research analysts +4.0%, management analysts +3.6%, HR specialists +3.0%. All in the most-exposed fifth. Research note: research_notes/part3-occupations.md §1, T4.
+
+**Note 2.**
+
+> As with the routes in chapter 13, what would count against the book was written down before any growth rate was computed.
+
+Our pre-registration, analysis/PREREGISTRATION.md, T4, written 22 October 2026 before any outcome data for these tests was downloaded (commit 93726bb, 06:51 Pacific time); implementation details in its Deviations entry "T4 and T5" (dated 2026-10-22), fixed before any employment growth rate was computed (it discloses that files were downloaded and their layouts inspected first); results committed at 07:13 the same morning (commit a1e8af5). Chapter 13 explains the general method (pre-registration, before-AI comparison, intervals, red team).
+
+**Note 3.**
+
+> Their scores capture what AI could do, as rated in 2023, and do not show whether anyone has put it to use.
+
+Eloundou, Manning, Mishkin and Rock, "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models", arXiv:2303.10130 (v5, August 2023), https://arxiv.org/abs/2303.10130; published in *Science* 384(6702), 2024. Score used: human-rated beta (E1 + 0.5·E2), data MIT licence. The authors state they make no predictions about adoption timelines. Research notes: economics.md (Eloundou entry); part3-occupations.md §4.4.
+
+**Note 4.**
+
+> We ranked the units into five equal groups by exposure, then compared how fast jobs grew in the most exposed fifth and the least exposed fifth.
+
+Our calculation, analysis/part3/t4_t5 (build_data.py, analyse.py). OEWS May 2016 (SOC 2010), May 2019 (OES hybrid codes), May 2022 and May 2025 (SOC 2018), joined through the BLS SOC 2010-2018 crosswalk and the OES 2019 hybrid list into 775 harmonised units with employment in all four years (99.96% or more of employment kept each year); 762 scored for exposure. Sources and hashes in analysis/data/part3/t4_t5/SOURCES.md. Research note: part3-occupations.md, method paragraph.
+
+**Note 5.**
+
+> The test carries the two safeguards chapter 13 described: the same test run on May 2016 to May 2019, as the fair comparison from before AI, and a range for every result, reported whatever it shows.
+
+Method explained in chapter 13. Our pre-registration, analysis/PREREGISTRATION.md (commit 93726bb, written 22 October 2026 before outcome data), ground rules (placebo 2016-2019; 95% bootstrap intervals, 10,000 resamples, seed 20261022; results reported whatever they show) and T4; bootstrap over units within each fifth per the Deviations entry "T4 and T5".
+
+**Note 6.**
+
+> Before ChatGPT the same gap was almost exactly zero (+0.02).
+
+Our calculation, analysis/results_part3_t4_t5.json, T4. Least-exposed fifth (153 units, 19.1m jobs in 2022) +0.67% a year [-0.08, 1.40]; most-exposed fifth (152 units, 37.1m jobs) +1.12% [-0.14, 2.30]; difference +0.45 percentage points a year [-0.97, +1.87]; placebo May 2016 to May 2019 +0.02 [-1.70, 1.85]. Chart: analysis/part3/t4_t5/charts/t4_exposure_fifths.png. Research note: part3-occupations.md §1.
+
+**Note 7.**
+
+> The range runs about one and a half points either side, and over three years that leaves room for roughly 4% to 5% of employment to move one way or the other without the test seeing it.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T4, safe sentence (exposure) and caveat on power: an interval of about ±1.5 points a year over three years means about 4-5% of employment could move either way unseen. Not pre-registered.
+
+**Note 8.**
+
+> The one version whose range sat clear of zero, a window from 2019 that we had not planned, showed exposed jobs within the same family growing faster.
+
+> That one deserves attention, because a later and shorter window is where an early effect would first appear.
+
+> The survey reports employers' payrolls by occupation, pooled across all ages, and builds each May figure from three years of survey rounds, so "2022 to 2025" compares, roughly, 2021 with 2024, and May 2023 still holds rounds from before ChatGPT.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T4 checks and results table (rt_t4_t5.json): leave-one-out of the 10 largest units +0.14 to +0.81; unweighted median +0.52; continuous score per SD -0.26 [-0.86, 0.35]; controlling for 2016-19 growth -0.28; within SOC major groups +0.29 [-0.49, 1.14], and over 2019-25 +0.80 [0.22, 1.43]; May 2023 to May 2025 on SOC 2018 codes -0.23 [-1.70, 1.29]. From the research note's sensitivity table (research_notes/part3-occupations.md): GPT-4-rated beta -0.43 [-1.90, 0.97], against -0.84 before ChatGPT (difference +0.14 [-1.50, 1.99]); controlled for 2019-22 growth -0.46 log points [-1.98, 0.98]. The continuous and growth-controlled rows are per standard deviation of exposure; the GPT-4 row is a top-minus-bottom gap in points a year. Caveats: OEWS May estimates pool three years of survey panels (so 2022 to 2025 compares roughly 2021 with 2024; May 2023 still contains pre-ChatGPT panels), and all ages are pooled. Not pre-registered.
+
+**Note 9.**
+
+> Pooling hides the group hit hardest so far, which chapter 5 described: workers aged 22 to 25 in exposed jobs, whose numbers in payroll data have fallen well behind those of their less exposed peers.
+
+Brynjolfsson, Chandar and Chen, "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence", Stanford Digital Economy Lab, 2025, revised August 2026 (ADP payroll data to June 2026), https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf. Employment of 22-25-year-olds in AI-exposed occupations stands 19% below where it would be had it kept pace with less exposed peers. Chapter 5 reports this in full. Research note: part3-occupations.md §3; red team T4 caveats.
+
+**Note 10.**
+
+> We matched those conversations to occupations and split the 282 units in the two most exposed fifths that had any usage data at the middle.
+
+Anthropic Economic Index, release 2025-03-27 (automation_vs_augmentation_by_task.csv and task_pct_v2.csv, Hugging Face commit 4e5f69f), https://huggingface.co/datasets/Anthropic/EconomicIndex; Handa et al., "Which Economic Tasks are Performed with AI? Evidence from Millions of Claude Conversations", arXiv:2503.04761, 2025. Augmentation = validation + task iteration + learning; automation = directive + feedback loop. Of the 304 units in the two most exposed fifths, 282 had usage data (22 without, 2.3m jobs); split at the median augmentation share, 0.635. Our matching: analysis/part3/t4_t5; PREREGISTRATION Deviations "T4 and T5".
+
+**Note 11.**
+
+> Before ChatGPT, the same two halves were already about 0.91 points apart in the same direction.
+
+Our calculation, analysis/results_part3_t4_t5.json, T4 augmentation split: more-automated half +1.85% a year [0.81, 2.89], more-augmented half +0.80% [-0.34, 2.15]; difference -1.05 pp [-2.60, +0.68]; placebo 2016-19 -0.91 [-2.62, 1.03]. Wording follows the red team safe sentence (augmentation). Chart: analysis/part3/t4_t5/charts/t4_augmentation_split.png.
+
+**Note 12.**
+
+> Leave those three out and the gap falls to about a quarter of a point.
+
+> The red team found that it stops being clear once those same three occupations are removed, and this chapter drops the claim.
+
+> At best it describes how people phrase requests to a chatbot, which may be far from how their employers have set up the work.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T4 augmentation split: without retail salespersons, cashiers and customer service reps -0.27 (placebo -0.52); the 2019-25 window, -2.43 [-4.05, -0.28] in the research note (part3-occupations.md, which called it "clearly negative"), becomes -1.41 [-3.21, 0.71] without the three; measure weaknesses (one company's users, early 2025, after the outcome window, median summed task share 0.09, describes phrasing of requests). AEI shares: retail salespersons 0.77, cashiers 0.77, customer service reps 0.68. Not pre-registered.
+
+**Note 13.**
+
+> The one real limit it sets is on this book: we cannot cite our own occupation data as evidence that augmenting protects jobs.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, "Does T4 contradict chapter 9?"; chapter 9 of this book, section "The missing trial".
+
+**Note 14.**
+
+> That last is a difference our own split could not detect, and it leans the book's way; the two can both hold, since they count different workers with a different measure.
+
+> If that gap spreads to experienced workers, the first forecast above is in trouble.
+
+Brynjolfsson, Chandar and Chen, "Canaries in the Coal Mine?", Stanford Digital Economy Lab, revised August 2026, https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf. They report "no evidence of widespread, economy-wide job displacement"; the young-worker gap with no comparable gap for experienced workers; declines concentrated where AI automates rather than complements. Research note: part3-occupations.md §3 [V].
+
+**Note 15.**
+
+> The Danish study from chapters 1 and 5 rules out chatbot effects bigger than 2% on earnings or recorded hours two years after ChatGPT.
+
+Humlum and Vestergaard, "Still Waters, Rapid Currents: Early Labor Market Transformation under Generative AI", NBER Working Paper 33777, May 2025, revised March 2026, https://www.nber.org/system/files/working_papers/w33777/w33777.pdf (abstract; abstract page https://www.nber.org/papers/w33777): Denmark, adoption surveys linked to administrative records; "precise null effects on earnings and recorded hours", "ruling out effects larger than 2% two years after the launch of ChatGPT"; tasks reorganised within jobs. Research note: part3-occupations.md §3.
+
+**Note 16.**
+
+> And the Budget Lab at Yale, in the report chapter 11 quoted, found that measures of exposure, automation and augmentation show "no sign of being related to changes in employment or unemployment."
+
+Gimbel, Kinder, Kendall and Lee, "Evaluating the Impact of AI on the Labor Market: Current State of Affairs", The Budget Lab at Yale, 1 October 2025, https://budgetlab.yale.edu/research/evaluating-impact-ai-labor-market-current-state-affairs. Key takeaways: the occupational mix is changing somewhat faster than in the past, a change that "predates the widespread introduction of AI"; "measures of exposure, automation, and augmentation show no sign of being related to changes in employment or unemployment." Later updates were seen only in search summaries and are not used. Research note: part3-occupations.md §3.
+
+**Note 17.**
+
+> Sources for the table are in the note.
+
+> The build-out can't be called yet: only power utilities clearly turned up after 2022, and gas utilities rose with them.
+
+Our calculations: analysis/results_part3_t1_t6.json (T1, T6), analysis/results_part3_t2_t3.json (T2, T3), analysis/results_part3_t4_t5.json (T4, T5); research notes part3-buildout-research-it.md, part3-newfirms-spending.md, part3-occupations.md. Verdicts and wording from Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, summary of verdicts and safe sentences: T1 weaker than reported in both directions (same-horizon pre-AI misses of 26-58 points for three series and 8.7 for power utilities; gas distribution +11.8%); T2 primary holds (fragile), secondary a 2025-26 model projection; T3-A holds as computed, break-even reading; T3-B holds with caveat (Baumol); T4 holds with caveat; augmentation split uninformative; T5 formal fail holds as a near miss, gap real but not tied to AI; T6 descriptive. Verdict labels in the table are the chapter's condensation of the red team's: T1 "No call yet" (none of the five series counts for or against the book; power utilities the one series that clearly turned up after 2022, +8.9% since December 2022, with gas utilities rising too); T3-A against the book as planned, with the spending-weighted slope (+0.25 [0.02, 0.68], not planned) in Hypothesis A's direction; T4 augmentation "Not supported" (no advantage, no clear disadvantage; the red team calls the split uninformative); T6 description only (cannot separate AI from interest rates and the end of pandemic hiring).
+
+**Note 18.**
+
+> Only one result survives: T3-B, the finding that jobs followed spending.
+
+> That spending went mostly into services that were getting dearer, such as health care and education, so this shows jobs following spending, not spending freed by things getting cheaper.
+
+Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, "Multiple comparisons (Holm, α = 0.05)" (rt_holm.json): with the book's own benchmarks five of 11 contrasts survive, but the T1 p-values rest on line-only intervals; replaced by same-horizon rank p-values (smallest possible 0.05 with 19 windows), only T3-B survives (p = 0.0025 < 0.05/10). The family has ten comparisons: four T1 series (2211, 518, 23713, 3344; electricians left out because all their same-horizon windows fall in the housing bust), T2, T3-A, T3-B, T4 exposure, T4 augmentation and T5. Holm tests the smallest p-value at 0.05/10, the next at 0.05/9, and so on, and stops at the first that fails. Holm guards against false positives only. T3-B interpretation: gainers got relatively dearer (health care +0.27 log, education +0.94). Not pre-registered.
+
+**Note 19.**
+
+> The tests and their "against the book" rules were planned before the results; what came after, the red team's review included, is marked as unplanned in the notes.
+
+Our pre-registration, analysis/PREREGISTRATION.md (commit 93726bb, written 22 October 2026 before outcome data), Deviations, entries of 22 October 2026, including "T1 and T6, additions made after the results were seen" (2022 gaps; forecast method and widening; T4 without the three large merged units; augmentation split on above-median usage; group forecast as shares). The red-team review states that everything in it is not pre-registered.
+
+**Note 20.**
+
+> Each one below is this book's own, carried forward from the data named with it, with a range and the observation that would prove it wrong.
+
+Our pre-registration, analysis/PREREGISTRATION.md (commit 93726bb, written 22 October 2026 before outcome data), section "Forecasts" (range, assumptions, falsifier) and the Deviations entry on the forecast method: Jan 2023-latest straight line continued to 2028, range the wider of a 12-month block bootstrap and the 2.5-97.5 percentiles of the method's pre-2020 back-test errors (24 forecasts; -3.78% to +7.36%), chosen after the data were seen; the ranges were widened the same day to match how far the same method missed before 2020.
+
+**Note 21.**
+
+> | Forecast | Data to | Range | Wrong if | |---|---|---|---| | Exposure and jobs, May 2025 to May 2030: at 2022-2025 rates, the most exposed fifth grows about 5.7% over five years and the least exposed 3.4%
+
+> | Forecast | Data to | Range | Wrong if | |---|---|---|---| | Exposure and jobs, May 2025 to May 2030: at 2022-2025 rates, the most exposed fifth grows about 5.7% over five years and the least exposed 3.4% | Occupation survey, May 2025 | Most exposed -0.7% to +12.1%; least exposed -0.4% to +7.2% | The most exposed fifth grows more than 1.5 points a year more slowly than the least | | Person-facing work, to May 2030: the most person-facing fifth outgrows the least and grows about 19% in five years
+
+> | Forecast | Data to | Range | Wrong if | |---|---|---|---| | Exposure and jobs, May 2025 to May 2030: at 2022-2025 rates, the most exposed fifth grows about 5.7% over five years and the least exposed 3.4% | Occupation survey, May 2025 | Most exposed -0.7% to +12.1%; least exposed -0.4% to +7.2% | The most exposed fifth grows more than 1.5 points a year more slowly than the least | | Person-facing work, to May 2030: the most person-facing fifth outgrows the least and grows about 19% in five years | Same | Gap 1 to 4 points a year; growth 13% to 25% | Missed if the gap is outside 1 to 4 points; wrong in direction if it is zero or below | | Office work's share of jobs, May 2030: office and administrative support falls from 11.4%; healthcare support rises from 5.1%
+
+Our projection, analysis/results_part3_t4_t5.json, "forecasts" (T4_exposure_fifths_to_2030, T5_person_fifths_to_2030, major_groups_share_to_2030), dated 22 October 2026, OEWS data to May 2025. Exposure: most-exposed fifth +5.7% over 2025-2030 [-0.7, +12.1], least-exposed +3.4% [-0.4, +7.2]; falsifier a shortfall over 1.5 pp a year. Person-facing: +19.2% [13.3, 25.2]; gap +1 to +4 pp a year. Shares: office and administrative support 11.42% (2025) to 9.65-10.21% (2030); healthcare support 5.08% to 6.01-6.20%. Group shares method added after the results (Deviations); its range spans each group's 2016-19 and 2022-25 growth relative to all jobs. Falsifiers: "missed" outside the range; "wrong in direction" at or beyond the 2025 level (office at or above 11.4%, healthcare support at or below 5.1%; person-facing gap at or below zero). Research note: part3-occupations.md §2.
+
+**Note 22.**
+
+> | Forecast | Data to | Range | Wrong if | |---|---|---|---| | Exposure and jobs, May 2025 to May 2030: at 2022-2025 rates, the most exposed fifth grows about 5.7% over five years and the least exposed 3.4% | Occupation survey, May 2025 | Most exposed -0.7% to +12.1%; least exposed -0.4% to +7.2% | The most exposed fifth grows more than 1.5 points a year more slowly than the least | | Person-facing work, to May 2030: the most person-facing fifth outgrows the least and grows about 19% in five years | Same | Gap 1 to 4 points a year; growth 13% to 25% | Missed if the gap is outside 1 to 4 points; wrong in direction if it is zero or below | | Office work's share of jobs, May 2030: office and administrative support falls from 11.4%; healthcare support rises from 5.1% | Same | Office 9.7% to 10.2%; healthcare 6.0% to 6.2% | Missed if either share is outside its range; wrong in direction if office is at or above 11.4%, or healthcare at or below 5.1% | | Power utility jobs, 2028 average: about 448,000, above the 2015-2019 trend line of about 371,000
+
+> | Forecast | Data to | Range | Wrong if | |---|---|---|---| | Exposure and jobs, May 2025 to May 2030: at 2022-2025 rates, the most exposed fifth grows about 5.7% over five years and the least exposed 3.4% | Occupation survey, May 2025 | Most exposed -0.7% to +12.1%; least exposed -0.4% to +7.2% | The most exposed fifth grows more than 1.5 points a year more slowly than the least | | Person-facing work, to May 2030: the most person-facing fifth outgrows the least and grows about 19% in five years | Same | Gap 1 to 4 points a year; growth 13% to 25% | Missed if the gap is outside 1 to 4 points; wrong in direction if it is zero or below | | Office work's share of jobs, May 2030: office and administrative support falls from 11.4%; healthcare support rises from 5.1% | Same | Office 9.7% to 10.2%; healthcare 6.0% to 6.2% | Missed if either share is outside its range; wrong in direction if office is at or above 11.4%, or healthcare at or below 5.1% | | Power utility jobs, 2028 average: about 448,000, above the 2015-2019 trend line of about 371,000 | Payroll survey, August 2026 | 431,000 to 481,000 | At or below 371,000, or outside the range | | IT services jobs, 2028: computer systems design about 2.29 million, below its old trend line of about 2.81 million
+
+> | Forecast | Data to | Range | Wrong if | |---|---|---|---| | Exposure and jobs, May 2025 to May 2030: at 2022-2025 rates, the most exposed fifth grows about 5.7% over five years and the least exposed 3.4% | Occupation survey, May 2025 | Most exposed -0.7% to +12.1%; least exposed -0.4% to +7.2% | The most exposed fifth grows more than 1.5 points a year more slowly than the least | | Person-facing work, to May 2030: the most person-facing fifth outgrows the least and grows about 19% in five years | Same | Gap 1 to 4 points a year; growth 13% to 25% | Missed if the gap is outside 1 to 4 points; wrong in direction if it is zero or below | | Office work's share of jobs, May 2030: office and administrative support falls from 11.4%; healthcare support rises from 5.1% | Same | Office 9.7% to 10.2%; healthcare 6.0% to 6.2% | Missed if either share is outside its range; wrong in direction if office is at or above 11.4%, or healthcare at or below 5.1% | | Power utility jobs, 2028 average: about 448,000, above the 2015-2019 trend line of about 371,000 | Payroll survey, August 2026 | 431,000 to 481,000 | At or below 371,000, or outside the range | | IT services jobs, 2028: computer systems design about 2.29 million, below its old trend line of about 2.81 million | Payroll survey, September 2026 | 2.21 to 2.46 million | At or above 2.81 million, or outside the range | | Data processing and hosting, 2028: about 453,000, on the old trend line, no call on direction
+
+Our projection, analysis/results_part3_t1_t6.json, forecasts_2028, dated 22 October 2026: BLS CES (data.bls.gov series pages) through September 2026 (August 2026 for power utilities, CES4422110001). Power utilities 448k [431, 481], 2015-19 trend line 371k; computer systems design (CES6054150001) 2,293k [2,207, 2,462], trend line 2,808k; data processing and hosting (CES5051800001) 453k [436, 487], trend line 453k, no directional call. Assumptions: the Jan 2023-latest straight line continues, no recession, no NAICS change. T6 caveats from Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, T6 safe sentence. The pre-registration ("Forecasts") used data processing as its example of a forecast (that it stays above trend); the data no longer point that way, since employment has fallen since 2023 (-6.6% since December 2022, red team T1). Research note: part3-buildout-research-it.md §2.
+
+**Note 23.**
+
+> | Forecast | Data to | Range | Wrong if | |---|---|---|---| | Exposure and jobs, May 2025 to May 2030: at 2022-2025 rates, the most exposed fifth grows about 5.7% over five years and the least exposed 3.4% | Occupation survey, May 2025 | Most exposed -0.7% to +12.1%; least exposed -0.4% to +7.2% | The most exposed fifth grows more than 1.5 points a year more slowly than the least | | Person-facing work, to May 2030: the most person-facing fifth outgrows the least and grows about 19% in five years | Same | Gap 1 to 4 points a year; growth 13% to 25% | Missed if the gap is outside 1 to 4 points; wrong in direction if it is zero or below | | Office work's share of jobs, May 2030: office and administrative support falls from 11.4%; healthcare support rises from 5.1% | Same | Office 9.7% to 10.2%; healthcare 6.0% to 6.2% | Missed if either share is outside its range; wrong in direction if office is at or above 11.4%, or healthcare at or below 5.1% | | Power utility jobs, 2028 average: about 448,000, above the 2015-2019 trend line of about 371,000 | Payroll survey, August 2026 | 431,000 to 481,000 | At or below 371,000, or outside the range | | IT services jobs, 2028: computer systems design about 2.29 million, below its old trend line of about 2.81 million | Payroll survey, September 2026 | 2.21 to 2.46 million | At or above 2.81 million, or outside the range | | Data processing and hosting, 2028: about 453,000, on the old trend line, no call on direction | Same | 436,000 to 487,000 | Below 436,000 or above 487,000 | | Professional services such as legal and accounting, 2030: if AI cuts their relative price by 25%, their share of consumer spending, 1.446% ($302 billion) in 2025, stays within the range
+
+Our projection, analysis/results_part3_t2_t3.json, T3 projection: BEA NIPA Table 2.4.5 line 104 "Professional and other services", 1.446% of PCE ($301.9bn) in 2025; relative price cut 25%: share 1.303-1.600%; 40%: freed spending -$59.2bn to +$51.2bn (negative = more spending on the category), central -$2.7bn. NIPA Tables 2.4.4 and 2.4.5 from BEA's release text files, https://apps.bea.gov/national/Release/TXT/. Spending-weighted slope (+0.25) and trimmed slope (+0.22) give $36bn and $32bn freed at a 40% cut: Our red-team review, "Red team: the six pre-registered tests (T1-T6)", 22 October 2026, analysis/part3/redteam/REDTEAM.md, "T3 projection" (not pre-registered). Falsifier: a relative price fall of about a quarter (20% to 30%) by 2030 with the share outside 1.30-1.60% (the 25% range; 1.20-1.73% is the 40% range). Research note: part3-newfirms-spending.md §2.
+
+**Note 24.**
+
+> For productivity, Acemoglu, as chapter 5 reported, estimated in 2024 that AI would add no more than 0.66% to total factor productivity over ten years in all; the OECD's economists put AI's addition to American total factor productivity growth at 0.25 to 0.6 of a percentage point every year for a decade; and the Penn Wharton Budget Model expects AI to leave productivity and GDP 1.5% higher by 2035.
+
+D. Acemoglu, "The Simple Macroeconomics of AI", NBER Working Paper 32487, May 2024 (ten-year total), https://www.nber.org/system/files/working_papers/w32487/w32487.pdf; F. Filippucci, P. Gal and M. Schief, "Miracle or Myth? Assessing the macroeconomic productivity gains from Artificial Intelligence", OECD Artificial Intelligence Papers No. 29, November 2024, as summarised on the OECD ECOSCOPE blog, 26 November 2024 (per year, US TFP), https://oecdecoscope.blog/2024/11/26/miracle-or-myth-assessing-the-macroeconomic-productivity-gains-from-artificial-intelligence/; Penn Wharton Budget Model, "The Projected Impact of Generative AI on Future Productivity Growth", 8 September 2025, https://budgetmodel.wharton.upenn.edu/p/2025-09-08-the-projected-impact-of-generative-ai-on-future-productivity-growth/. Moved from chapter 12 (its former notes 29-31).
+
+**Note 25.**
+
+> These are employers' expectations.
+
+World Economic Forum, *Future of Jobs Report 2025*, January 2025 (employer survey, 2025 to 2030), https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf. Employers' expectations. Same survey: "40% planning to reduce staff as their skills become less relevant, and 50% planning to transition staff from declining to growing roles" (claims.md 12.43 / 14.40; whole-book fix W3). Moved from chapter 12 (former note 32).
+
+**Note 26.**
+
+> The IMF warned in January 2026 that the spread of demand for AI skills goes with lower employment in jobs where AI can do much of the work and helps little with the rest, a challenge for young workers that may shrink the middle class.
+
+Jaumotte, Kim, Koll, E. Li, L. Li, Melina, Song and Tavares, "Bridging Skill Gaps for the Future: New Jobs Creation in the AI Age", IMF Staff Discussion Note, 14 January 2026, https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2026/01/09/Bridging-Skill-Gaps-for-the-Future-New-Jobs-Creation-in-the-AI-Age-572136. Summary page read; the full text was not. Moved from chapter 12 (former note 33).
+
+**Note 27.**
+
+> The exact series codes are in the note.
+
+Series codes: BLS CES4422110001 (electric power generation, transmission and distribution) and CES6054150001 (computer systems design and related services); BLS OEWS May national estimates, major groups 43 (office and administrative support) and 31 (healthcare support); Census Business Formation Statistics BA_HBA and BF_PBF4Q, NAICS sectors 54 and 51; BEA NIPA Tables 2.4.4 (prices) and 2.4.5 (spending), line 104 "Professional and other services"; Census Construction Spending, private, "Data center". Chapter 13 gives the latest data-centre figure: US Census Bureau, Construction Spending (C30), private construction, seasonally adjusted annual rate, "Data center", release of 1 October 2026: $84.95bn (August 2026, preliminary) against $8.8bn (August 2019), https://www.census.gov/construction/c30/xlsx/privsatime.xlsx, retrieved 2026-10-22. Research note: part3-buildout-research-it.md §3.1. Other watch-list series: BLS CES CES4422110001 and CES6054150001 (https://data.bls.gov/timeseries/); BLS OEWS May national estimates (https://www.bls.gov/oes/2025/may/oes_nat.htm pattern; our copies via the Wayback Machine, analysis/data/part3/t4_t5/SOURCES.md); Census Business Formation Statistics BA_HBA and BF_PBF4Q (https://www.census.gov/econ/bfs/csv/bfs_monthly.csv); BEA NIPA Tables 2.4.4 and 2.4.5 (https://apps.bea.gov/national/Release/TXT/). BLS cautions that OEWS is designed for cross-sectional comparison (part3-buildout-research-it.md §4).
 
